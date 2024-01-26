@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="script.js"></script>
+    <title>Events_PitchandRoll</title>
+</head>
+<body>
+    <section class="sub-header" id="section1">
+        <nav>
+            <a href="index.html"><img src="images/artwork.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <h1>Our Events</h1>
+    </section>
+    <a href="#section4" id="scroll">Scroll to Bottom</a>
+
+    <!--------- Events -------->
+    <section class="event">
+        <h1>Events We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="event-col">
+                <h3>Karaoke Nights</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+                <img class="event-image" src="images/KaraokeNight.jpg" alt="Karaoke Nights">
+            </div>
+            <div class="event-col">
+                <h3>Disco Nights</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+                <img class="event-image" src="images/DiscoNight.jpg" alt="Disco Nights ">
+            </div>
+            <div class="event-col">
+                <h3>Trivia Nights</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+                <img class="event-image" src="images/TriviaNight.jpg" alt="Trivia Nights">
+            </div>
+        </div>
+    </section> 
+
+    <!------Facilities------>
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                    <img src="images/Bar.jpg" alt="Bar">
+                    <h3>World Class Bar</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+            </div>
+            <div class="facilities-col">
+                    <img src="images/Lounge.jpg" alt="lounge">
+                    <h3>Beautiful Lounge</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+            </div>
+            <div class="facilities-col">
+                    <img src="images/Event 2.jpg" alt="Dance Floor">
+                    <h3>Spacious Dance Floor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis maiores laborum, impedit cumque aperiam cum dicta consequuntur doloremque a, debitis odio fugit sapiente adipisci provident voluptatibus quam similique unde!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------Footer--------->
+
+    <section class="footer" id="section4">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsam aut dolores iste voluptatem numquam id amet, <br>non sapiente quod, ad a, maxime accusantium praesentium! Pariatur quia exercitationem facere possimus?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i> 
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Ferdinand Millowa</p>
+    </section>
+    <a href="#section1" id="scroll">Back to Top</a>
+
+    <!--Javascript for toggle Menu-->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
